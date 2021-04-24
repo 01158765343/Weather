@@ -75,10 +75,10 @@ const updetElement=async (url) =>{
   const datajsonn = await data.json()
   //get element and updat element data
   try {
-    document.getElementById('temp').textContent=`temp is: ${datajsonn.temp}`;
-    document.getElementById('date').textContent=`date is : ${datajsonn.time}`;
-    document.getElementById('content').textContent=`feeling is: ${datajsonn.fellimg}`;
-    document.getElementById('city').textContent=`city is: ${datajsonn.city}`;
+    document.getElementById('temp').innerHTML=`temp is: ${datajsonn.temp}`;
+    document.getElementById('date').innerHTML=`date is : ${datajsonn.time}`;
+    document.getElementById('content').innerHTML=`feeling is: ${datajsonn.fellimg}`;
+    document.getElementById('city').innerHTML=`city is: ${datajsonn.city}`;
   }catch(error) {
           console.log("error", error);
           // appropriately handle the error
