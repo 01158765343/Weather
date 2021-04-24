@@ -28,17 +28,17 @@ app.use((req,res , next) =>{
 })
 
 app.post('/postData', (req ,res) => {
-    projectData ={
-      temp:req.body.temp,
-      fellimg:req.body.fell,
-      city:req.body.city,
-      time:req.body.time,
-    }
-  console.log(projectData)
-    // console.log(req.body);
-    // console.log('eldeeeeeeb'); test
+  // add all data to opjact projactData
+  projectData ={
+    temp:req.body.temp,
+    fellimg:req.body.fell,
+    city:req.body.city,
+    time:req.body.time,
+  }
+//   console.log(projectData)
 })
+// send data to dcument
 app.get('/add',(req,res) => {
   res.send(projectData)
-  console.log(projectData)
+//   console.log(projectData)
 });
